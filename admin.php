@@ -5,16 +5,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Sida</title>
 </head>
 <body>
     <form method="post" action="laggatill.php">  
             <input type="hidden" name="Person">
             <input type="text" id="bok" name="Titel" max="100" placeholder="Lägga till bok?" required="required">
             <input type="text" id="bok" name="forf"  placeholder="Författare" required="required">
-
             <input type="submit">
-        </form> 
+    </form> 
 
     <form method="post" action="laggatill.php">  
             <input type="hidden" name="Bok">
@@ -28,13 +27,13 @@
             <input type="submit">
         </form>  
         <form method="post" action="laggatill.php">  
-            <input type="hidden" name="Ljud">
+            <input type="hidden" name="ljud">
             <input type="text" id="Film" name="titel2" max="100" placeholder="Titel" required="required">
             <input type="text" id="Film" name="forf2" max="100" placeholder="Författare" required="required">
-            <input type="text" id="Film" name="langd" max="100" placeholder="Langd" required="required">
+            <input type="number" id="Film" name="langd" max="100" placeholder="Langd" required="required">
             <input type="text" id="Film" name="genre2" max="100" placeholder="Genre" required="required">
             <input type="text" id="Film" name="rost" max="100" placeholder="Röst" required="required">
-            <input type="text" id="Film" name="pid2" max="100" placeholder="Person ID" required="required">
+            <input type="number" id="Film" name="pid2" max="100" placeholder="Person ID" required="required">
             <input type="submit">
         </form>  
         <form method="post" action="laggatill.php">  

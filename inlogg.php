@@ -15,7 +15,7 @@
         $PasswordErr = false;
 
         if(isset($_POST['Namn']) && isset($_POST['Password'])){
-        require_once('db.php');
+        require_once('conn.php');
         
         $anv = $_POST['Namn'];
         $pass = $_POST['Password'];
@@ -56,8 +56,8 @@
     }
     ?>
         <form method="post">
-        Användarnamn: <input required type="text" name="Namn" placeholder="Skriv in ett användarnamn" value="<?php echo $Name; ?>"><span class="error"> <?php echo $NameErr; ?></span><br><br>
-        Lösenord: <input required type="password" name="Password" placeholder="Skriv in ett lösenord" value="<?php echo $Password; ?>"><span class="error"> <?php echo $PasswordErr; ?></span><br><br>
+        <p>Användarnamn:</p> <input required type="text" name="Namn" placeholder="Skriv in ett användarnamn" value="<?php echo $Name; ?>"><span class="error"> <?php echo $NameErr; ?></span><br>
+        <p>Lösenord:</p> <input required type="password" name="Password" placeholder="Skriv in ett lösenord" value="<?php echo $Password; ?>"><span class="error"> <?php echo $PasswordErr; ?></span><br><br>
         <input type="submit" value="Skicka">
         </form>
 </body>
